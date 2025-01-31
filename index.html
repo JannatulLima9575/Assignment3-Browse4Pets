@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
     <link rel="shortcut icon" href="images/logo-header.png" type="image/x-icon">
+
         <!-- Font Awesome Cdn -->
         <link
         rel="stylesheet"
@@ -24,13 +25,13 @@
 
 
 
-    <!-- animation  -->
+    <!-- animation link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -92,12 +93,12 @@
   <body class="sora">
 
     <!-- Header Section  -->
-    <header class="md:container mx-auto">
+    <header class="md:w-11/12 mx-auto">
 
-      <nav class="bg-[#FFF9F4] py-4 px-6 md:py-6 md:px-20">
+      <!-- Navbar Section  -->
+      <nav class="bg-[#FFF9F4] py-4 px-4 md:py-6 md:px-40">
         <div class="flex justify-between items-center">
-          <!-- Logo Section -->
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-4">
             <img class="w-[40px] md:w-[50px]" src="./images/logo-header.png" alt="Logo">
             <a class="text-2xl font-semibold text-gray-900 hidden md:block">Browse<span class="text-yellow-400">4</span>Pets</a>
           </div>
@@ -111,20 +112,22 @@
       
           <!-- Right Section -->
           <div class="flex items-center space-x-4">
+
+            <button class="hidden md:flex items-center p-2 hover:bg-gray-200 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+            </button>
+
             <button class="hidden md:flex items-center p-2 hover:bg-gray-200 rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
             </button>
       
-            <button class="hidden md:flex items-center p-2 hover:bg-gray-200 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-              </svg>
-            </button>
       
-            <button class="hidden lg:block px-4 py-2 border border-orange-400 rounded-lg font-medium hover:bg-orange-100">Login</button>
-            <button class="hidden lg:block px-4 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600">Register</button>
+            <button class="hidden lg:block px-4 py-2 border border-orange-400 rounded-lg font-medium hover:bg-orange-500 hover:text-white">Login</button>
+            <button class="hidden lg:block px-4 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-zinc-500">Register</button>
       
             <!-- Mobile Menu Button -->
             <div class="lg:hidden">
@@ -137,13 +140,13 @@
           </div>
         </div>
       
-        <!-- Mobile Menu (Hidden by default) -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-end mt-4 space-y-3 text-lg">
           <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Find a Pet</a>
           <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Breeds</a>
           <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Contact Us</a>
-          <button class="w-full py-2 border border-orange-400 rounded-lg font-medium">Login</button>
-          <button class="w-full py-2 bg-orange-500 text-white rounded-lg font-medium">Register</button>
+          <!-- <button class="w-full py-2 border border-orange-400 rounded-lg font-medium">Login</button>
+          <button class="w-full py-2 bg-orange-500 text-white rounded-lg font-medium">Register</button> -->
         </div>
       
         <script>
@@ -156,132 +159,32 @@
         </script>
       </nav>
       
-      <!-- Navbar Section-->
-      <!-- <nav>
-        <div class="navbar bg-[#FFF9F4] md:py-11 md:px-32">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 w-52 p-2 shadow space-y-4"
-              >
-                <li><a>Find a pet</a></li>
-                <li>
-                  <a>Breeds</a>
-                </li>
-                <li><a>Contact us</a></li>
-                <button class="btn border border-orange-400">login</button>
-                <button class="btn bg-paw-primary">Register</button>
-              </ul>
-            </div> -->
-            <!-- logo -->
-            <!-- <div class="flex items-center gap-2">
-              <img
-                class="w-[30px] md:w-[47px]"
-                src="./images/logo-header.png"
-                alt=""
-              />
-              <a class="text-2xl text-[#111111] font-normal"
-                >Browse<span class="text-[#FFDC26]">4</span>Pets</a
-              >
-            </div>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Find a pet</a></li>
-              <li>
-                <a>Breeds</a>
-              </li>
-              <li><a>Contact us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end flex md:gap-4">
-            <button class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
-            <button class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-                <span
-                  class="badge badge-xs badge-primary indicator-item"
-                ></span>
-              </div>
-            </button>
-            <button class="btn border hidden lg:flex border-orange-400">
-              login
-            </button>
-            <button class="btn bg-paw-primary hidden lg:flex">Register</button>
-          </div>
-        </div>
-      </nav> -->
 
-      <!--start banner section -->
-
+      <!-- Banner Section -->
       <section class="md:my-20">
         <div
-          class="container mx-auto mt-8 relative flex-col px-4 md:py-11 md:px-32"
+          class="w-10/12 mx-auto mt-8 relative flex-col px-4 md:py-11 md:px-40"
         >
           <div class="min-h-screen flex flex-col lg:flex-row items-center">
             <!-- Left Content -->
-            <div class="lg:absolute flex-col top-32 space-y-5">
-              <h1 class="font-ADlam text-5xl title">
+            <div class="lg:absolute flex-col top-32 space-y-5 sm:ml-[-5%] md:ml-[-10%]">
+              <h1 class="ADlam text-6xl pb-4 title">
                 Pamper Your Pet,<br />
                 Because They Deserve <br />
                 the Best
               </h1>
-              <p class="text-gray-600 description">
+              <p class="text-gray-600 text-xl description pb-6">
                 Discover a world of treats, toys, and essentials handpicked for
                 <br />
                 your furry friends. Shop now and make tails wag with joy!
               </p>
-              <button class="bg-yellow-300 text-black px-4 py-2 rounded-lg">
+              <button class="bg-yellow-300 font-bold text-black px-6 py-2 rounded-lg hover:bg-zinc-500 hover:text-white">
                 Find a pet
               </button>
             </div>
+
             <!-- Right Image -->
-            <div>
+            <div class="sm:mr-[-5%] md:mr-[-12%]">
               <img src="./images/cat-big.png" alt="" />
             </div>
           </div>
@@ -290,101 +193,99 @@
 
       <!-- end banner-section -->
     </header>
-    <main class="md:container mx-auto">
-      <!-- Categories section -->
 
+    <!-- Main Section  -->
+    <main class="md:w-11/12 mx-auto">
+
+      <!-- Categories section -->
       <section class="md:my-20">
         <h2 class="text-3xl px-4 adlam md:px-32">Browse By Categories</h2>
         <!-- container -->
         <div
           class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 px-4 md:py-11 md:px-32 mt-10 md:mt-10"
         >
-          <!-- card -->
-          <!-- card-1 -->
+          <!-- Card Section -->
+          <!-- Card-1 -->
           <div
-            class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg"
+            class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
               src="./images/dog-cartoon.png"
               alt=""
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
             />
-            <h4 class="font-bold">Dog</h4>
+            <h4 class="font-bold pt-6">Dog</h4>
             <p>3 items</p>
           </div>
-          <!-- end-card-1 -->
 
           <!-- card-2 -->
           <div
-            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5"
+            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
               src="./images/fish-cartoon.png"
               alt=""
             />
-            <h4 class="font-bold">Fish</h4>
+            <h4 class="font-bold pt-6">Fish</h4>
             <p>3 item</p>
           </div>
-          <!-- card-2-end -->
+
           <!-- card-3 -->
           <div
-            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5"
+            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
               src="./images/cat-cartoon.png"
               alt=""
             />
-            <h4 class="font-bold">Cat</h4>
+            <h4 class="font-bold pt-6">Cat</h4>
             <p>3 item</p>
           </div>
-          <!-- card-3-end -->
+
           <!-- card-4 -->
           <div
-            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5"
+            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
               src="./images/bird-cartoon.png"
               alt=""
             />
-            <h4 class="font-bold">Birds</h4>
+            <h4 class="font-bold pt-6">Birds</h4>
             <p>3 item</p>
           </div>
-          <!-- card-4-end -->
+
           <!-- card-5 -->
           <div
-            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5"
+            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
               src="./images/mouse-cartoon.png"
               alt=""
             />
-            <h4 class="font-bold">Small pet</h4>
+            <h4 class="font-bold pt-6">Small pet</h4>
             <p>3 item</p>
           </div>
-          <!-- card-5-end -->
+
           <!-- card-6 -->
           <div
-            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5"
+            class="bg-[#f9df8a] flex flex-col py-10 items-center rounded-lg space-y-5 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <img
-              class="bg-white p-4 rounded-full"
+              class="bg-white p-6 rounded-full"
               src="./images/rabbit-cartoon.png"
               alt=""
             />
-            <h4 class="font-bold">Rabat</h4>
-            <p>3 item</p>
+            <h4 class="font-bold pt-6">Rabat</h4>
+            <p>2 item</p>
           </div>
-          <!-- card-6-end -->
-          <!-- end-container -->
         </div>
       </section>
-      <!-- end categories section -->
 
-      <!-- start Products section -->
+      <!-- Products Section -->
       <section class="my-20 bg-[#FFF9F4]">
         <h2 class="text-3xl px-4 py-5 adlam md:px-32">Trending Pet Products</h2>
         <!-- container -->

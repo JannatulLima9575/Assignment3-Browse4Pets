@@ -93,8 +93,71 @@
 
     <!-- Header Section  -->
     <header class="md:container mx-auto">
+
+      <nav class="bg-[#FFF9F4] py-4 px-6 md:py-6 md:px-20">
+        <div class="flex justify-between items-center">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-3">
+            <img class="w-[40px] md:w-[50px]" src="./images/logo-header.png" alt="Logo">
+            <a class="text-2xl font-semibold text-gray-900 hidden md:block">Browse<span class="text-yellow-400">4</span>Pets</a>
+          </div>
+      
+          <!-- Desktop Menu -->
+          <ul class="hidden lg:flex space-x-8 text-lg text-gray-700">
+            <li><a href="#" class="hover:text-orange-500">Find a Pet</a></li>
+            <li><a href="#" class="hover:text-orange-500">Breeds</a></li>
+            <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+          </ul>
+      
+          <!-- Right Section -->
+          <div class="flex items-center space-x-4">
+            <button class="hidden md:flex items-center p-2 hover:bg-gray-200 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </button>
+      
+            <button class="hidden md:flex items-center p-2 hover:bg-gray-200 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+            </button>
+      
+            <button class="hidden lg:block px-4 py-2 border border-orange-400 rounded-lg font-medium hover:bg-orange-100">Login</button>
+            <button class="hidden lg:block px-4 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600">Register</button>
+      
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button id="menu-btn" class="p-2 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-end mt-4 space-y-3 text-lg">
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Find a Pet</a>
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Breeds</a>
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md">Contact Us</a>
+          <button class="w-full py-2 border border-orange-400 rounded-lg font-medium">Login</button>
+          <button class="w-full py-2 bg-orange-500 text-white rounded-lg font-medium">Register</button>
+        </div>
+      
+        <script>
+          const menuBtn = document.getElementById('menu-btn');
+          const mobileMenu = document.getElementById('mobile-menu');
+      
+          menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+      </nav>
+      
       <!-- Navbar Section-->
-      <nav>
+      <!-- <nav>
         <div class="navbar bg-[#FFF9F4] md:py-11 md:px-32">
           <div class="navbar-start">
             <div class="dropdown">
@@ -126,9 +189,9 @@
                 <button class="btn border border-orange-400">login</button>
                 <button class="btn bg-paw-primary">Register</button>
               </ul>
-            </div>
+            </div> -->
             <!-- logo -->
-            <div class="flex items-center gap-2">
+            <!-- <div class="flex items-center gap-2">
               <img
                 class="w-[30px] md:w-[47px]"
                 src="./images/logo-header.png"
@@ -192,7 +255,7 @@
             <button class="btn bg-paw-primary hidden lg:flex">Register</button>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
       <!--start banner section -->
 
